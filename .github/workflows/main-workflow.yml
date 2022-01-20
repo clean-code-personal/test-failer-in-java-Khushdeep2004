@@ -24,3 +24,8 @@ jobs:
       run: |
         cd misaligned
         java misaligned.java
+
+    - name: alerter fail
+      run: |
+        cd alerter
+        java alerter.java
