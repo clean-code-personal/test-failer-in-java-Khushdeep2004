@@ -19,3 +19,8 @@ jobs:
       run: |
         cd tshirts
         java tshirts.java
+
+    - name: misaligned fail
+      run: |
+        cd misaligned
+        java misaligned.java
