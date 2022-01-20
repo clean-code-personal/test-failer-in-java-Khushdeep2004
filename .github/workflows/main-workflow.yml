@@ -12,6 +12,7 @@ jobs:
     - name: Setup Java JDK
       uses: actions/setup-java@v2.5.0
       with:
+        distribution: 'zulu'
         java-version: '11'
 
     - name: tshirts fail
