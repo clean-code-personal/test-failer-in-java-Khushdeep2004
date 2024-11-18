@@ -5,7 +5,7 @@ public class Misaligned {
         int i = 0, j = 0;
         for(i = 0; i < majorColors.length; i++) {
             for(j = 0; j < minorColors.length; j++) {
-                System.out.printf("%d | %s | %s \n", i * minorColors.length + j, majorColors[i], minorColors[i]);
+                System.out.printf("%d | %s | %s \n", i * minorColors.length + j, majorColors[i], minorColors[j]);
             }
         }
         return i * j;
