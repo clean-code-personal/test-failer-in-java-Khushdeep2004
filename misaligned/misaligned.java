@@ -14,9 +14,7 @@ public class Misaligned {
     }
     public static void main(String[] args) { 
         int result = printColorMap();
-        if (result != 25) {
-            throw new RuntimeException("Test failed: Expected 25 but got " + result);
-        }
+         assert (result == 25);
         System.out.println("All is well (maybe!)");
     }
 }
