@@ -3,16 +3,20 @@ public class Misaligned {
         String majorColors[] = {"White", "Red", "Black", "Yellow", "Violet"};
         String minorColors[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
         int i = 0, j = 0;
+         int count = 0;
         for(i = 0; i < majorColors.length; i++) {
             for(j = 0; j < minorColors.length; j++) {
                 System.out.printf("%d | %s | %s \n", i * minorColors.length + j, majorColors[i], minorColors[j]);
+                count++;
             }
         }
-        return i * j;
+        return count-1;
     }
     public static void main(String[] args) { 
         int result = printColorMap();
-        assert(result == 25);
+        if (result != 25) {
+            throw new RuntimeException("Test failed: Expected 25 but got " + result);
+        }
         System.out.println("All is well (maybe!)");
     }
 }
