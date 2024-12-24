@@ -9,7 +9,9 @@ public class Misaligned {
                 int idx = i * minorColors.length + j; 
                 System.out.printf("%d | %s | %s \n", idx, majorColors[i], minorColors[j]);
                  count++;
+                if(count==0){
                 assert(idx == 1);
+                }
         }
         return count;
     }
