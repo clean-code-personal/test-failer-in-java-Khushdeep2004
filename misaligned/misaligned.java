@@ -10,7 +10,7 @@ public class Misaligned {
                 count++;
             }
         }
-        return count-1;
+        return count;
     }
     public static void main(String[] args) { 
         int result = printColorMap();
