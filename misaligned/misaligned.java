@@ -7,14 +7,15 @@ public class Misaligned {
         for(i = 0; i < majorColors.length; i++) {
             for(j = 0; j < minorColors.length; j++) {
                 System.out.printf("%d | %s | %s \n", i * minorColors.length + j, majorColors[i], minorColors[j]);
-                count++;
+                // count++;
             }
         }
+        count+=1;
         return count;
     }
     public static void main(String[] args) { 
         int result = printColorMap();
-         assert (result == 25);
+         assert (result == 26);
         System.out.println("All is well (maybe!)");
     }
 }
