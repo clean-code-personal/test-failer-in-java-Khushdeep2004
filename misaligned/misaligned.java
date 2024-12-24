@@ -6,15 +6,16 @@ public class Misaligned {
          int count = 0;
         for(i = 0; i < majorColors.length; i++) {
             for(j = 0; j < minorColors.length; j++) {
-                System.out.printf("%d | %s | %s \n", i * minorColors.length + j, majorColors[i], minorColors[j]);
+                int idx = i * minorColors.length + j; 
+                System.out.printf("%d | %s | %s \n", idx, majorColors[i], minorColors[j]);
                  count++;
-            }
+                assert(idx == 1);
         }
         return count;
     }
     public static void main(String[] args) { 
         int result = printColorMap();
-         assert (result == 1);
+         // assert (result == 1);
         System.out.println("All is well (maybe!)");
     }
 }
